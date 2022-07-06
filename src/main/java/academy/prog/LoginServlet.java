@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
         }else {
             PrintWriter pw = response.getWriter();
             pw.println("<html><head><title>Wrong </title></head>");
-            pw.println("<body><h1>Wrong login or password</h1>");
+            pw.println("<body><h1>Wrong login or password, password must contain: upper and lower case letters, digits and symbols !@#$%^&?_</h1>");
             pw.println("<br>Click this link to <a href=\"/login?a=exit\"> return </a></body></html>");
         }
     }
